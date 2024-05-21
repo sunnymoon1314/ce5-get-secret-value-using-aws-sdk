@@ -1,3 +1,8 @@
-[[bin]]
-name = "GetSecretApp"
-path = "ruby/get-secret.rs"
+# [package]
+# name = "GetSecretApp"
+# path = "ruby/get-secret.rs"
+
+[package]
+name = "GetSecretApp" # the name of the package
+version = "1.0.0"    # the current version, obeying semver
+# authors = ["Alice <a@example.com>", "Bob <b@example.com>"]
