@@ -2,7 +2,7 @@
 # If you need more information about configurations or implementing the sample code, visit the AWS docs:
 # https://aws.amazon.com/developer/language/ruby/
 
-require_relative 'lib/aws-sdk-secretsmanager'
+require 'lib/aws-sdk-secretsmanager'
 
 def get_secret
   client = Aws::SecretsManager::Client.new(region: 'us-east-1')
