@@ -1,0 +1,28 @@
+{
+  "name": "ce5-get-secret-value-using-aws-sdk",
+  "version": "1.0.0",
+  "description": "Description for ce5-get-secret-value-using-aws-sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnymoon1314/ce5-get-secret-value-using-aws-sdk.git"
+  },
+  "author": "soon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunnymoon1314/ce5-get-secret-value-using-aws-sdk/issues"
+  },
+  "homepage": "https://github.com/sunnymoon1314/ce5-get-secret-value-using-aws-sdk#readme",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "jest": "^29.7.0",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

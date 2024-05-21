@@ -6,3 +6,4 @@
 name = "GetSecretApp" # the name of the package
 version = "1.0.0"    # the current version, obeying semver
 # authors = ["Alice <a@example.com>", "Bob <b@example.com>"]
+build = "ruby/get-secret.rs"
