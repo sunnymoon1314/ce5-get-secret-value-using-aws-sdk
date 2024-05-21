@@ -9,13 +9,15 @@
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
 
+package com.example.secrets;
+
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
 import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
 import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
 import software.amazon.awssdk.services.secretsmanager.model.SecretsManagerException;
 
-class GetSecret {
+public class GetSecretValue {
     public static void main(String[] args) {
 
         String secretName = "soon-secret-name";
