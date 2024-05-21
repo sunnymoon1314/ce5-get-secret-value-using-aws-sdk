@@ -9,34 +9,36 @@
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
 
-public static void getSecret() {
+class GetSecret {
+    public static void main(String[] args) {
 
-    String secretName = "soon-secret-name";
-    Region region = Region.of("us-east-1");
+        String secretName = "soon-secret-name";
+        Region region = Region.of("us-east-1");
 
-    // Create a Secrets Manager client
-    SecretsManagerClient client = SecretsManagerClient.builder()
-            .region(region)
-            .build();
+        // Create a Secrets Manager client
+        SecretsManagerClient client = SecretsManagerClient.builder()
+                .region(region)
+                .build();
 
-    GetSecretValueRequest getSecretValueRequest = GetSecretValueRequest.builder()
-            .secretId(secretName)
-            .build();
+        GetSecretValueRequest getSecretValueRequest = GetSecretValueRequest.builder()
+                .secretId(secretName)
+                .build();
 
-    GetSecretValueResponse getSecretValueResponse;
+        GetSecretValueResponse getSecretValueResponse;
 
-    try {
-        getSecretValueResponse = client.getSecretValue(getSecretValueRequest);
-    } catch (Exception e) {
-        // For a list of exceptions thrown, see
-        // https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
-        throw e;
+        try {
+            getSecretValueResponse = client.getSecretValue(getSecretValueRequest);
+        } catch (Exception e) {
+            // For a list of exceptions thrown, see
+            // https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
+            throw e;
+        }
+
+        String secret = getSecretValueResponse.secretString();
+
+        // Your code goes here.
+
+        // Expected output: {"soon-secret-key":"soon-secret-value"}
+        System.out.printf("Secret: ", secret);
     }
-
-    String secret = getSecretValueResponse.secretString();
-
-    // Your code goes here.
-
-    // Expected output: {"soon-secret-key":"soon-secret-value"}
-    System.out.printf("Secret: ", secret);
 }
