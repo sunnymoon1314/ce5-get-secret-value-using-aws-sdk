@@ -11,11 +11,11 @@ using Amazon;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
 
-namespace GetSecretValueAsync
+namespace Main
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             string secretName = "soon-secret-name";
             string region = "us-east-1";
