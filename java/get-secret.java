@@ -9,6 +9,12 @@
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
 // import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
 
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
+import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
+import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
+import software.amazon.awssdk.services.secretsmanager.model.SecretsManagerException;
+
 class GetSecret {
     public static void main(String[] args) {
 
