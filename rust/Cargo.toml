@@ -1,0 +1,3 @@
+[[bin]]
+name = "GetSecretApp"
+path = "./get-secret.rs"
