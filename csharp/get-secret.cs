@@ -11,7 +11,8 @@ using Amazon;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
 
-static async Task GetSecret()
+namespace GetSecretNameSpace
+{static async Task GetSecret()
 {
     string secretName = "soon-secret-name";
     string region = "us-east-1";
@@ -43,4 +44,5 @@ static async Task GetSecret()
 
     // Expected output: {"soon-secret-key":"soon-secret-value"}
     Console.WriteLine("Secret: ", secret);
+}
 }
