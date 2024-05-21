@@ -7,9 +7,9 @@
 // 21.05.2024 Soon: Project file copied from:
 // https://stackoverflow.com/questions/51393395/msbuild-error-msb1003-specify-a-project-or-solution-file
 
-using Amazon;
-using Amazon.SecretsManager;
-using Amazon.SecretsManager.Model;
+using AWSSDK;
+using AWSSDK.SecretsManager;
+using AWSSDK.SecretsManager.Model;
 
 // namespace GetSecretNameSpace
 static async Task GetSecret()
