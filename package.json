@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "ce5-get-secret-value-using-aws-sdk",
   "version": "1.0.0",
   "description": "Description for ce5-get-secret-value-using-aws-sdk",
