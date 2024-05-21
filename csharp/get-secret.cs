@@ -4,6 +4,9 @@
  *	https://aws.amazon.com/developer/language/net/getting-started
  */
 
+// 21.05.2024 Soon: Project file copied from:
+// https://stackoverflow.com/questions/51393395/msbuild-error-msb1003-specify-a-project-or-solution-file
+
 using Amazon;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
